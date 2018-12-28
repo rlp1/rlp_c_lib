@@ -6,7 +6,7 @@
 
 char* strcpy_range(const char *src, const size_t s_index, const size_t e_index) {
     const size_t len = strlen(src);
-    char *buffer = (char *) malloc(sizeof(char) * (e_index + s_index) + 2);
+    char *buffer = (char *) malloc(sizeof(char) * (e_index - s_index) + 2);
     size_t buffer_pos = 0;
     for (size_t pos = s_index; pos <= e_index; pos++, buffer_pos++) {
         *(buffer + buffer_pos) = *(src + pos);
