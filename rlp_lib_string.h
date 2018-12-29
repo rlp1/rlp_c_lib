@@ -18,7 +18,7 @@ strcpy_range(const char *src, const size_t s_index, const size_t e_index);
  * token -> represents the string that is used to split the tokens.
 */
 char** 
-strsplit(char *str, const char *token)
+strsplit(char *str, const char *token);
 
 /* This function check if the all characters that contains in the string
  * is ASCII. */
