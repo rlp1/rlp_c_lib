@@ -8,7 +8,8 @@
  * s_index -> this represents the start index.
  * e_index -> this represents the end index.
  * */
-char* strcpy_range(const char *src, const size_t s_index, const size_t e_index);
+char*
+strcpy_range(const char *src, const size_t s_index, const size_t e_index);
 
 /* This function split the stri string in parts depending by the token
  * that is used to split this. 
@@ -16,7 +17,17 @@ char* strcpy_range(const char *src, const size_t s_index, const size_t e_index);
  * src -> this represents the string that will be split.
  * token -> represents the string that is used to split the tokens.
 */
-char** strsplit(char *str, const char *token)
+char** 
+strsplit(char *str, const char *token)
+
+/* This function check if the all characters that contains in the string
+ * is ASCII. */
+int
+isascii_string(const char *str);
+
+//
+// ... Deprecated functions ...
+//
 
 /* This function split the string in parts between the "token".
  *

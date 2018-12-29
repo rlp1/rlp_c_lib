@@ -56,6 +56,17 @@ strsplit(char *str, const char *token)
     return buffer;
 }
 
+int
+isascii_string(const char *str)
+{
+    while (*str) if (!isascii(*str++)) return 1;
+    return 0;
+}
+
+//
+// ... Deprecated functions ...
+//
+
 /* This function to split strings is deprecated. */
 char** 
 _____strsplit(const char *src, const char token) 
